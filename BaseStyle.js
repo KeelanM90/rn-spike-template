@@ -3,10 +3,9 @@ import {
 } from 'react-native';
 
 export const loginStyle = {
-  // backgroundColor: '#00f',
+  backgroundColor: '#00f',
   height: 'auto'
 };
-
 
 export const createStyleSheet = (obj) => StyleSheet.create(obj || {});
 

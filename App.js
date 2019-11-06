@@ -22,11 +22,12 @@ import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 
-import {createStyleSheet, loginStyle } from './BaseStyle';
+import { loginStyle } from './BaseStyle';
 
 import { LoginForm } from 'km-login-module';
 
 const App = () => {
+  console.log(loginStyle);
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -36,7 +37,7 @@ const App = () => {
           style={styles.scrollView}>
 
 
-          <LoginForm name="Mick" style={createStyleSheet()}/>
+          <LoginForm name="Mick" style={loginStyle}/>
 
 
           <Header />
