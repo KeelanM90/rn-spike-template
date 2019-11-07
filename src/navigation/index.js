@@ -1,8 +1,11 @@
 import HomeScreen from '../components/HomeScreen';
 import SecondScreen from '../components/SecondScreen';
 import ThirdScreen from '../components/ThirdScreen';
+import {createBottomTabNavigator} from 'react-navigation-tabs';
+import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
+import {createAppContainer} from 'react-navigation';
 
-export default tabScreenConfig = {
+const tabScreenConfig = {
   Home: {
     screen: HomeScreen,
   },
@@ -11,5 +14,12 @@ export default tabScreenConfig = {
   },
   Third: {
     screen: ThirdScreen,
-  }
+  },
+
 };
+
+const TabNavigator = Platform.OS === "android" ?
+  createMaterialBottomTabNavigator(tabScreenConfig)
+  : createBottomTabNavigator(tabScreenConfig);
+
+export default createAppContainer(TabNavigator);
