@@ -7,31 +7,42 @@ import {
   View,
   Text,
   StatusBar,
+  Button,
 } from 'react-native';
 
-/**
- * Import custom styles for custom features
- */
-import {loginStyle} from '../styles/BaseStyle';
-
-/**
- * Import custom features defined as npm packages
- */
-import {LoginForm} from 'km-login-module';
-
 export default class HomeScreen extends React.Component {
+
+  static navigationOptions = {
+    title: 'Home',
+  };
+
   render() {
+
+    const {screenProps} = this.props;
+    const secondScreenOptions = {
+      routeName: 'Nested',
+      params: {
+        testprop: 'this is a test'
+      },
+    };
+
     return (
       <>
         <StatusBar barStyle="dark-content"/>
-        <SafeAreaView>
+        <SafeAreaView style={styles.safeArea}>
           <ScrollView contentInsetAdjustmentBehavior="automatic"
                       style={styles.scrollView}>
+
             <View style={styles.body}>
-              <Text style={styles.sectionTitle}>BPme Base Application</Text>
+              <Text style={styles.section}>{screenProps.test.data}</Text>
             </View>
 
-            <LoginForm name="This string and style are passed as Props" style={loginStyle}/>
+            <View style={{marginTop: 160}}>
+              <Button title="Nested Navigation Button"
+                      color='white'
+                      onPress={() => this.props.navigation.navigate(secondScreenOptions)}
+              />
+            </View>
 
           </ScrollView>
         </SafeAreaView>
@@ -42,15 +53,19 @@ export default class HomeScreen extends React.Component {
 
 const styles = StyleSheet.create({
   scrollView: {
-    backgroundColor: Colors.white,
+    backgroundColor: '#EA80FC',
+  },
+  safeArea: {
+    flex: 1,
   },
   body: {
-    backgroundColor: Colors.white,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  sectionTitle: {
-    padding: 12,
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
+  section: {
+    paddingTop: 48,
+    fontSize: 14,
+    fontWeight: '800',
+    color: Colors.white,
   },
 });

@@ -1,13 +1,19 @@
-import {Platform} from 'react-native';
-import {createAppContainer} from 'react-navigation';
-import {createBottomTabNavigator} from 'react-navigation-tabs';
-import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
-import tabScreenConfig from './navigation';
+import React from 'react';
+import TabNavigator from './navigation';
 
-const TabNavigator = Platform.OS === "android" ?
-  createMaterialBottomTabNavigator(tabScreenConfig)
-  : createBottomTabNavigator(tabScreenConfig);
+export default App = () => {
 
-const App = createAppContainer(TabNavigator);
+  // Add custom config for features here????
+  const screenProps = {
+    test: {
+      data: 'This string is passed from app.js config!',
+    },
+    map: {},
+    payback: {},
+    factura: {},
+  };
 
-export default App;
+  return (
+    <TabNavigator screenProps={ screenProps } />
+  )
+}

@@ -1,6 +1,3 @@
-// import {
-//   StyleSheet,
-// } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 export const loginStyle = {
   backgroundColor: Colors.light,
@@ -9,5 +6,3 @@ export const loginStyle = {
   alignItems: 'center',
   marginTop: 24
 };
-
-// export const createStyleSheet = (obj) => StyleSheet.create(obj || {});
