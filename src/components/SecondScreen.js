@@ -5,7 +5,7 @@ export default class SecondScreen extends React.Component {
   render() {
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Second Screen</Text>
+        <Text>{this.props.navigation.getParam("testprop")}</Text>
       </View>
     );
   }
