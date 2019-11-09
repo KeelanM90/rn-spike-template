@@ -1,19 +1,19 @@
 import React from 'react';
 import TabNavigator from './navigation';
+import feature from './featureConfig';
 
 export default App = () => {
 
-  // Add custom config for features here????
+  /**
+   * Add feature specific configs here from 'featureConfig' section
+   * Pass as props to children
+   */
   const screenProps = {
-    test: {
-      data: 'This string is passed from app.js config!',
-    },
-    map: {},
-    payback: {},
-    factura: {},
+    map: feature.staionFinder,
+    factura: feature.factura,
   };
 
   return (
-    <TabNavigator screenProps={ screenProps } />
+    <TabNavigator screenProps={screenProps}/>
   )
 }
