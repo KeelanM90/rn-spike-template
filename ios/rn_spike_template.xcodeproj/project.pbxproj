@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* rn_spike_templateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rn_spike_templateTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -15,11 +16,11 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* rn_spike_templateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rn_spike_templateTests.m */; };
+		5DFF9CBFDD9647F1A98510AF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43834B2F98464A6DAD823C32 /* Ionicons.ttf */; };
 		9CADE88DAC72DC5E4AF54988 /* libPods-rn_spike_template.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C1A03CCA79890E329066DA /* libPods-rn_spike_template.a */; };
 		AEA3DDCEEDA03B931230F017 /* libPods-rn_spike_template-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A757EEACD8A39187615D204 /* libPods-rn_spike_template-tvOS.a */; };
 		E52A469E04E5DA5CA98F9C16 /* libPods-rn_spike_template-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D61A304627F6EAEB48BDD6E3 /* libPods-rn_spike_template-tvOSTests.a */; };
 		FCD7A1B6566C84D8B62FA882 /* libPods-rn_spike_templateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72905FCDF454DF847BA14665 /* libPods-rn_spike_templateTests.a */; };
-		5DFF9CBFDD9647F1A98510AF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43834B2F98464A6DAD823C32 /* Ionicons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		1D5AD7B8D672FA3CAF66CDF5 /* Pods-rn_spike_templateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_spike_templateTests.release.xcconfig"; path = "Target Support Files/Pods-rn_spike_templateTests/Pods-rn_spike_templateTests.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* rn_spike_template-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rn_spike_template-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* rn_spike_template-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rn_spike_template-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43834B2F98464A6DAD823C32 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-ionicons/fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		72905FCDF454DF847BA14665 /* libPods-rn_spike_templateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rn_spike_templateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		945D70505B8A0B0A341CF947 /* Pods-rn_spike_template-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_spike_template-tvOS.release.xcconfig"; path = "Target Support Files/Pods-rn_spike_template-tvOS/Pods-rn_spike_template-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		A1F5067D5ECDD99139844C2D /* Pods-rn_spike_template-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_spike_template-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-rn_spike_template-tvOSTests/Pods-rn_spike_template-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +69,6 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F452A5C94D9F6E9054DB4F69 /* Pods-rn_spike_template-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_spike_template-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-rn_spike_template-tvOSTests/Pods-rn_spike_template-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE6E6371A025A48CFAFC5490 /* Pods-rn_spike_templateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_spike_templateTests.debug.xcconfig"; path = "Target Support Files/Pods-rn_spike_templateTests/Pods-rn_spike_templateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		43834B2F98464A6DAD823C32 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-ionicons/fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,14 @@
 			name = rn_spike_template;
 			sourceTree = "<group>";
 		};
+		2AFFE964758847BB836E3792 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43834B2F98464A6DAD823C32 /* Ionicons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +171,6 @@
 				FE6E6371A025A48CFAFC5490 /* Pods-rn_spike_templateTests.debug.xcconfig */,
 				1D5AD7B8D672FA3CAF66CDF5 /* Pods-rn_spike_templateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -199,15 +207,6 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		2AFFE964758847BB836E3792 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				43834B2F98464A6DAD823C32 /* Ionicons.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -320,6 +319,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -877,6 +877,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
+				INFOPLIST_PREFIX_HEADER = "";
+				INFOPLIST_PREPROCESS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -923,6 +926,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
+				INFOPLIST_PREFIX_HEADER = "";
+				INFOPLIST_PREPROCESS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;

@@ -1,45 +1,43 @@
 import React from 'react';
 import {Platform} from 'react-native';
+
 // import HomeScreen from '../components/HomeScreen';
-import SecondScreen from '../components/SecondScreen';
 // import NestedScreen from "../components/NestedScreen";
+import SecondScreen from '../components/SecondScreen';
+
 import {createStackNavigator} from 'react-navigation-stack';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 import {createAppContainer} from 'react-navigation';
+
 import Ionicons from 'react-native-ionicons';
-import Colors from '../constants/Colors';
+import Colors from '../assets/Colors';
+import CONSTANTS from '../../config';
+import FEATURE_CONFIG from '../featureConfig';
+
+// const FacturaModule = {
+//   Home: {
+//     screen: HomeScreen,
+//     navigationOptions: ({navigation}) => ({
+//       title: FEATURE_CONFIG.factura.name,
+//       headerStyle: {
+//         backgroundColor: Colors[CONSTANTS.ENV].darkColor
+//       },
+//       headerTitleStyle: {},
+//       headerBackTitleStyle: {},
+//       headerTintColor: Colors[CONSTANTS.ENV].white,
+//     }),
+//   },
+//   Nested: NestedScreen,
+// };
 
 /**
  * CUSTOM MODULES ADDED BELOW
  * ==========================
  * The Factura Module. This is pulled in from npm, as will all modules
  */
-// const FacturaModule = {
-//   Home: {
-//     screen: HomeScreen,
-//     navigationOptions: ({navigation}) => ({
-//       title: 'Factura',
-//       headerStyle: {
-//         backgroundColor: Colors.bp.darkColor
-//       },
-//       headerTitleStyle: {},
-//       headerBackTitleStyle: {},
-//       headerTintColor: Colors.bp.white,
-//     }),
-//   },
-//   Nested: NestedScreen,
-// };
-
-
-
 import Factura from 'rn-feature-spike';
-
 const FacturaModule = Factura;
-
-console.log('***********************');
-console.log(JSON.stringify(Factura));
-console.log('***********************');
 
 /**
  * This is a stack navigator for Facturas
@@ -58,48 +56,41 @@ const tabItemsConfig = {
     navigationOptions: {
       tabBarIcon: tabInfo => {
         return (
-          <Ionicons name="navigate" color={Colors.bp.darkColor}/>
+          <Ionicons name={FEATURE_CONFIG.factura.tabBarIcon}
+                    color={Colors[CONSTANTS.ENV].darkColor}/>
         );
       },
-      tabBarColor: Colors.bp.white,
-      tabBarLabel: 'Factura',
-      activeColor: Colors.bp.darkColor,
+      tabBarColor: Colors[CONSTANTS.ENV].white,
+      tabBarLabel: FEATURE_CONFIG.factura.name,
+      activeColor: Colors[CONSTANTS.ENV].darkColor,
     }
   },
   Second: {
     screen: SecondScreen,
     navigationOptions: {
       tabBarIcon: tabInfo => {
-        return <Ionicons name="person" color={Colors.bp.darkColor}/>;
+        return <Ionicons name={FEATURE_CONFIG.staionFinder.tabBarIcon}
+                         color={Colors[CONSTANTS.ENV].darkColor}/>;
       },
-      tabBarColor: Colors.bp.white,
-      tabBarLabel: 'Station Finder',
-      activeColor: Colors.bp.darkColor,
+      tabBarColor: Colors[CONSTANTS.ENV].white,
+      tabBarLabel: FEATURE_CONFIG.staionFinder.name,
+      activeColor: Colors[CONSTANTS.ENV].darkColor,
     }
   }
 };
 
-
-/**
- * GLOBAL OPTIONS BELOW
- * ====================
- * Global Tab Options for Android Material
- */
 const tabMaterialOptions = {
-  activeColor: Colors.bp.white,
+  activeColor: Colors[CONSTANTS.ENV].white,
   shifting: true,
 };
-/**
- * Global Tab Options for iOS
- */
 const tabIosOptions = {
   tabBarOptions: {
     style: {
       paddingTop: 4
     },
-    activeTintColor: Colors.bp.darkColor
+    activeTintColor: Colors[CONSTANTS.ENV].darkColor
   },
-  activeColor: Colors.bp.white,
+  activeColor: Colors[CONSTANTS.ENV].white,
 };
 
 const TabNavigator = Platform.OS === "android"

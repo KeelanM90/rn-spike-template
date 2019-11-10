@@ -1,6 +1,6 @@
 import React from 'react';
-import Colors from '../constants/Colors';
-
+import Colors from '../assets/Colors';
+import CONSTANTS from '../../config'
 import {
   SafeAreaView,
   StyleSheet,
@@ -43,7 +43,7 @@ export default class HomeScreen extends React.Component {
                 ?
                 // Android Button
                 <TouchableNativeFeedback onPress={() => this.props.navigation.navigate(nestedNavScreenOptions)}
-                                         background={TouchableNativeFeedback.Ripple('green')}>
+                                         background={TouchableNativeFeedback.Ripple(Colors[CONSTANTS.ENV].accentColor)}>
                   <View style={styles.button}>
                     <Text>Button</Text>
                   </View>
@@ -70,8 +70,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   scrollView: {
-    flex:1,
-    backgroundColor: Colors.bp.accentColor,
+    flex: 1,
+    backgroundColor: Colors[CONSTANTS.ENV].accentColor,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -82,13 +82,13 @@ const styles = StyleSheet.create({
   button: {
     width: 200,
     alignItems: 'center',
-    backgroundColor: '#DDDDDD',
+    backgroundColor: Colors[CONSTANTS.ENV].grey,
     padding: 10
   },
   section: {
     paddingTop: 48,
     fontSize: 14,
     fontWeight: '800',
-    color: Colors.bp.white,
+    color: Colors[CONSTANTS.ENV].white,
   },
 });
