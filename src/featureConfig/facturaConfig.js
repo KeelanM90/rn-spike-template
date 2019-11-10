@@ -4,4 +4,5 @@ export default {
   description: 'Mexican Factura Module',
   tabBarIcon: 'navigate',
   style: {},
+  data: {},
 }

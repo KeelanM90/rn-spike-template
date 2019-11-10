@@ -4,4 +4,5 @@ export default {
   description: 'Map View Module',
   tabBarIcon: 'person',
   style: {},
+  data: {},
 }
